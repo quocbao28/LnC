@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="Suite" parallel="false">
+
+	<test name="Run on Chrome">
+		<listeners>
+			<listener class-name="common.ExtentTestNGITestListener" />
+			<listener class-name="common.ExtentTestNGIReporterListener" />
+			<listener class-name="org.uncommons.reportng.HTMLReporter" />
+			<listener class-name="org.uncommons.reportng.JUnitXMLReporter" />
+		</listeners>
+		<parameter name="browser" value="chrome" />
+		<classes>
+			<class name="Login.LoginTest" />
+		</classes>
+	</test>
+
+<!-- 	<test name="Run on Firefox"> -->
+<!-- 		<listeners> -->
+<!-- 			<listener class-name="common.ExtentTestNGITestListener" /> -->
+<!-- 			<listener class-name="common.ExtentTestNGIReporterListener" /> -->
+<!-- 			<listener class-name="org.uncommons.reportng.HTMLReporter" /> -->
+<!-- 			<listener class-name="org.uncommons.reportng.JUnitXMLReporter" /> -->
+<!-- 		</listeners> -->
+<!-- 		<parameter name="browser" value="firefox" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="Login.LoginTest" /> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+	
+<!-- 	<test name="Run on IE"> -->
+<!-- 		<listeners> -->
+<!-- 			<listener class-name="common.ExtentTestNGITestListener" /> -->
+<!-- 			<listener class-name="common.ExtentTestNGIReporterListener" /> -->
+<!-- 			<listener class-name="org.uncommons.reportng.HTMLReporter" /> -->
+<!-- 			<listener class-name="org.uncommons.reportng.JUnitXMLReporter" /> -->
+<!-- 		</listeners> -->
+<!-- 		<parameter name="browser" value="ie" /> -->
+<!-- 		<classes> -->
+<!-- 			<class name="Login.LoginTest" /> -->
+<!-- 		</classes> -->
+<!-- 	</test> -->
+</suite> <!-- Suite -->
